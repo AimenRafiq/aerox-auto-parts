@@ -59,7 +59,7 @@ INSERT INTO public.products (
 )
 VALUES
   (
-    'p1000000-0000-0000-0000-000000000001',
+    'a1000000-0000-0000-0000-000000000001',
     'BRM-P28076N',
     'Brembo Prime Ceramic Front Brake Pad Set',
     'brembo-prime-ceramic-front-brake-pad-set',
@@ -76,7 +76,7 @@ VALUES
     '145mm x 55mm x 16.5mm'
   ),
   (
-    'p1000000-0000-0000-0000-000000000002',
+    'a1000000-0000-0000-0000-000000000002',
     'BRM-09A76111',
     'Brembo UV-Coated Front Vented Brake Rotor',
     'brembo-uv-coated-front-vented-brake-rotor',
@@ -93,7 +93,7 @@ VALUES
     '282mm Outer Diameter, 23mm Nominal Thickness'
   ),
   (
-    'p1000000-0000-0000-0000-000000000003',
+    'a1000000-0000-0000-0000-000000000003',
     'BIL-24-218206',
     'Bilstein B6 Performance Front Shock Absorber',
     'bilstein-b6-performance-front-shock-absorber',
@@ -110,7 +110,7 @@ VALUES
     '520mm Extended Length'
   ),
   (
-    'p1000000-0000-0000-0000-000000000004',
+    'a1000000-0000-0000-0000-000000000004',
     'BSH-16010729',
     'Bosch QuietCast Premium Disc Brake Rotor',
     'bosch-quietcast-premium-disc-brake-rotor',
@@ -127,7 +127,7 @@ VALUES
     '296mm Outer Diameter, 28mm Vented'
   ),
   (
-    'p1000000-0000-0000-0000-000000000005',
+    'a1000000-0000-0000-0000-000000000005',
     'MAN-C28038',
     'Mann-Filter Premium Engine Air Filter',
     'mann-filter-premium-engine-air-filter',
@@ -144,7 +144,7 @@ VALUES
     '278mm x 185mm x 45mm'
   ),
   (
-    'p1000000-0000-0000-0000-000000000006',
+    'a1000000-0000-0000-0000-000000000006',
     'DEN-673-1309',
     'Denso Direct Ignition Coil',
     'denso-direct-ignition-coil',
@@ -161,7 +161,7 @@ VALUES
     '160mm Height, 4-Pin Connector'
   ),
   (
-    'p1000000-0000-0000-0000-000000000007',
+    'a1000000-0000-0000-0000-000000000007',
     'NGK-94461-4PK',
     'NGK Laser Iridium Spark Plug (Pack of 4)',
     'ngk-laser-iridium-spark-plug-pack-of-4',
@@ -178,7 +178,7 @@ VALUES
     '14mm Thread, 26.5mm Reach, 0.032" Gap'
   ),
   (
-    'p1000000-0000-0000-0000-000000000008',
+    'a1000000-0000-0000-0000-000000000008',
     'BSH-6055C',
     'Bosch HEPA Cabin Air Filter',
     'bosch-hepa-cabin-air-filter',

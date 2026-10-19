@@ -128,7 +128,7 @@ export const SEED_BRANDS: Brand[] = [
 
 export const SEED_PRODUCTS: ExtendedProduct[] = [
   {
-    id: "p1000000-0000-0000-0000-000000000001",
+    id: "a1000000-0000-0000-0000-000000000001",
     sku: "BRM-P28076N",
     name: "Brembo Prime Ceramic Front Brake Pad Set",
     slug: "brembo-prime-ceramic-front-brake-pad-set",
@@ -151,7 +151,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [{ storage_path: "https://images.unsplash.com/photo-1600790142055-619df03207e6?w=600&q=80", alt_text: "Brembo Ceramic Brake Pads", sort_order: 1 }],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000002",
+    id: "a1000000-0000-0000-0000-000000000002",
     sku: "BRM-09A76111",
     name: "Brembo UV-Coated Front Vented Brake Rotor",
     slug: "brembo-uv-coated-front-vented-brake-rotor",
@@ -174,7 +174,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000003",
+    id: "a1000000-0000-0000-0000-000000000003",
     sku: "BIL-24-218206",
     name: "Bilstein B6 Performance Front Shock Absorber",
     slug: "bilstein-b6-performance-front-shock-absorber",
@@ -197,7 +197,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [{ storage_path: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80", alt_text: "Bilstein Performance Damper", sort_order: 1 }],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000004",
+    id: "a1000000-0000-0000-0000-000000000004",
     sku: "BSH-16010729",
     name: "Bosch QuietCast Premium Disc Brake Rotor",
     slug: "bosch-quietcast-premium-disc-brake-rotor",
@@ -220,7 +220,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000005",
+    id: "a1000000-0000-0000-0000-000000000005",
     sku: "MAN-C28038",
     name: "Mann-Filter Premium Engine Air Filter",
     slug: "mann-filter-premium-engine-air-filter",
@@ -243,7 +243,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [{ storage_path: "https://images.unsplash.com/photo-1600790142055-619df03207e6?w=600&q=80", alt_text: "Mann-Filter Engine Air Filter", sort_order: 1 }],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000006",
+    id: "a1000000-0000-0000-0000-000000000006",
     sku: "DEN-673-1309",
     name: "Denso Direct Ignition Coil",
     slug: "denso-direct-ignition-coil",
@@ -266,7 +266,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [{ storage_path: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80", alt_text: "Denso Direct Ignition Coil", sort_order: 1 }],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000007",
+    id: "a1000000-0000-0000-0000-000000000007",
     sku: "NGK-94461-4PK",
     name: "NGK Laser Iridium Spark Plug (Pack of 4)",
     slug: "ngk-laser-iridium-spark-plug-pack-of-4",
@@ -289,7 +289,7 @@ export const SEED_PRODUCTS: ExtendedProduct[] = [
     images: [{ storage_path: "https://images.unsplash.com/photo-1600790142055-619df03207e6?w=600&q=80", alt_text: "NGK Laser Iridium Spark Plugs", sort_order: 1 }],
   },
   {
-    id: "p1000000-0000-0000-0000-000000000008",
+    id: "a1000000-0000-0000-0000-000000000008",
     sku: "BSH-6055C",
     name: "Bosch HEPA Cabin Air Filter",
     slug: "bosch-hepa-cabin-air-filter",
