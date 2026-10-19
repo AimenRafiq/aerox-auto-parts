@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Manrope", "Aptos", "Segoe UI", sans-serif;
+    --color-ink: #202522;
+    --color-navy: #202522;
+    --color-accent: #a85d32;
+    --color-bg: #f5f3ef;
+    --color-surface: #ffffff;
+    --color-muted: #71766f;
+    --color-border: #e5e1d9;
+    --color-success: #247a52;
+    --color-warning: #a96812;
+    --color-error: #b42318;
+  }
+
+  * {
+    @apply border-brand-border;
+  }
+
+  body {
+    @apply bg-brand-bg text-brand-ink antialiased selection:bg-brand-accent selection:text-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.035em;
+  }
+
+  ::selection {
+    @apply bg-brand-accent text-white;
+  }
+
+  /* Accessible focus indicator defaults */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-none ring-2 ring-brand-accent ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .premium-hero {
+    background: linear-gradient(115deg, #202522 0%, #292e2a 100%);
+  }
+}
