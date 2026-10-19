@@ -1,5 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import type { Database } from "@/types/database";
+import { getSupabaseUrl } from "./config";
 
 /**
  * Creates a privileged Supabase client using the SERVICE ROLE key.
@@ -16,12 +17,12 @@ export function getSupabaseAdminClient() {
     );
   }
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseUrl = getSupabaseUrl();
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
   if (!supabaseUrl || !serviceRoleKey) {
     throw new Error(
-      "Missing Supabase admin credentials: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be defined."
+      "Missing Supabase admin credentials: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be defined."
     );
   }
 
@@ -32,4 +33,3 @@ export function getSupabaseAdminClient() {
     },
   });
 }
-

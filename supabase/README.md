@@ -68,6 +68,11 @@ available to storefront users through the database API or product pages.
    - **Step 7:** Run `supabase/migrations/20261014000007_atomic_checkout_order.sql`
 4. Confirm tables are visible under the **Table Editor**.
 
+For Vercel deployments, the app accepts either `NEXT_PUBLIC_SUPABASE_URL` with
+`NEXT_PUBLIC_SUPABASE_ANON_KEY`, or the Supabase integration variables
+`SUPABASE_URL` with `SUPABASE_ANON_KEY` (or `SUPABASE_PUBLISHABLE_KEY`). The
+service-role key is not used for storefront reads or sign-in.
+
 ### Option B: Using Supabase CLI
 
 ```bash

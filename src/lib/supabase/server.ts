@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import type { Database } from "@/types/database";
+import { getSupabaseAnonKey, getSupabaseUrl } from "./config";
 
 /**
  * Creates a Supabase client for Server Components, Route Handlers, and Server Actions.
@@ -9,8 +10,8 @@ import type { Database } from "@/types/database";
 export async function getSupabaseServerClient() {
   const cookieStore = await cookies();
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-project.supabase.co";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key";
+  const supabaseUrl = getSupabaseUrl() || "https://placeholder-project.supabase.co";
+  const supabaseAnonKey = getSupabaseAnonKey() || "placeholder-anon-key";
 
   return createServerClient<Database>(supabaseUrl, supabaseAnonKey, {
     cookies: {
@@ -30,4 +31,3 @@ export async function getSupabaseServerClient() {
     },
   });
 }
-

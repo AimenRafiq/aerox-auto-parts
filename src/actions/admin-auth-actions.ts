@@ -3,6 +3,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
 
 export interface AdminLoginResult {
   success: boolean;
@@ -10,17 +11,6 @@ export interface AdminLoginResult {
 }
 
 const DEV_ADMIN_COOKIE = "aerox_admin_dev_session";
-
-function isSupabaseConfigured(): boolean {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  return Boolean(
-    url &&
-      key &&
-      !url.includes("placeholder-project") &&
-      !key.includes("placeholder-anon-key")
-  );
-}
 
 export async function loginAdminAction(
   formData: FormData
@@ -122,4 +112,3 @@ export async function logoutAdminAction(): Promise<void> {
   cookieStore.delete(DEV_ADMIN_COOKIE);
   redirect("/admin/login");
 }
-
